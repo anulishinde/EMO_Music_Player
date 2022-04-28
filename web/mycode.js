@@ -1,11 +1,4 @@
 
-let playpause_btn = document.getElementsByClassName(".playpause-track");
-let next_btn = document.getElementsByClassName(".next-track");
-let prev_btn = document.getElementsByClassName(".prev-track");
-let seek_slider = document.getElementsByClassName("seek_slider");
-let volume_slider = document.getElementsByClassName("volume_slider");
-let curr_time = document.getElementsByClassName("current-time");
-let total_duration = document.getElementsByClassName("total-duration");
 // Create new audio element
 let curr_track = document.createElement('audio');
 let isPlaying = false;
@@ -118,40 +111,6 @@ function play(elem)
 var eqc=1;
 var sqc=1;
 var queueitems=0;
-function addq(elem)
-{
-  console.log(elem.id);
-  if(elem.id.length>2)
-    var x=elem.id.charAt(1)+elem.id.charAt(2);
-  else
-    var x=elem.id.charAt(1)
-	var z=songs[x][0];
-  if(!songrun)
-  {
-    document.getElementById("sname").innerHTML=sname[x];
-    curr_track.src= z;
-    resetValues();
-    curr_track.load();
-    updateTimer = setInterval(seekUpdate, 1000);
-    curr_track.play();
-    songrun=true;
-    isPlaying = true;
-    document.getElementById("playpausetrack").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-  }
-  if(bool[x]==true)
-		return;
-	
-	bool[x]=true;
-	var l=document.createElement("label");
-	l.id="e"+eqc;
-	l.name=x;
-	l.innerHTML=sname[x]+"<br>";
-	//var text=document.createTextNode(sname[x]+"<br>");
-	//l.appendChild(text);
-	document.getElementById("queue").appendChild(l);
-  queueitems=queueitems+1;
-	eqc=eqc+1;
-}
 
 function setmod(elem){
 	mod=elem.value;
