@@ -30,3 +30,7 @@ When emotion is detected, you can see the name of the emotion in the terminal op
 
 
 ![3](https://user-images.githubusercontent.com/83027180/165817443-cc538a45-1476-40eb-8dea-355b5461e6da.png)
+
+
+
+For full project contact : stegproject01@gmail.com
