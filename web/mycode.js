@@ -153,69 +153,6 @@ function addq(elem)
 	eqc=eqc+1;
 }
 
-
-function nextsong(){
-  sqc=sqc+1;
-	// if(sqc==eqc){
-	// 			alert("Queue is empty.");
-	// 			return;
-	// 	}
-  if(sqc>queueitems)
-  {
-    alert("No next Song");
-    sqc=sqc-1;
-    return;
-  }
-		var elem=document.getElementById("e"+sqc);
-			var xa=elem.name;
-			var pa=songs[xa][0];
-			bool[xa]=false;
-			document.getElementById("sname").innerHTML=sname[xa];
-			curr_track.src= pa;
-      curr_track.load();
-      updateTimer = setInterval(seekUpdate, 1000);
-      curr_track.play();
-      isPlaying = true;
-      document.getElementById("playpausetrack").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-			//document.getElementById("emoji").style.backgroundImage="url('"+songs[xa][3]+"')";	
-			songrun=true;
-			//document.getElementById("queue").removeChild(elem);	
-			//sqc=sqc+1;
-
-}
-
-
-function prevTrack(){
-	// if(sqc==eqc){
-	// 			alert("Queue is empty.");
-	// 			return;
-	// 	}
-    sqc=sqc-1;
-    if(sqc<1){
-        alert("no previous track");
-        sqc=sqc+1;
-				return;
-    }else{
-      var elem=document.getElementById("e"+sqc);
-			var xa=elem.name;
-			var pa=songs[xa][0];
-			bool[xa]=false;
-			document.getElementById("sname").innerHTML=sname[xa];
-			curr_track.src= pa;
-      curr_track.load();
-      updateTimer = setInterval(seekUpdate, 1000);
-      curr_track.play();
-      isPlaying = true;
-      document.getElementById("playpausetrack").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-			//document.getElementById("emoji").style.backgroundImage="url('"+songs[xa][3]+"')";	
-			songrun=true;
-			//document.getElementById("queue").removeChild(elem);	
-			//sqc=sqc+1;
-    }
-		
-
-}
-
 function setmod(elem){
 	mod=elem.value;
   if(mod==2)
