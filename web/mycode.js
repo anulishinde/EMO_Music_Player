@@ -23,16 +23,7 @@ var path=["songs\\ban ja rani.mp3"
 ,"songs\\musafir.mp3"
 ,"songs\\o sathi.mp3"
 ,"songs\\phir bhi.mp3"
-,"songs\\Ho Ja Mast Malang Tu.mp3"
-,"songs\\Jee Karda.mp3"
-,"songs\\Abhi Toh Party Shuru Hui Hai.mp3"
-,"songs\\Badtameez Dil.mp3"
-,"songs\\Balam Pichkari.mp3"
-,"songs\\Galliyan Song.mp3"
-,"songs\\Tujhe Kitna Chahne Lage.mp3"
-,"songs\\Aal Izz Well.mp3"
-,"songs\\Rock On.mp3"
-,"songs\\Malang.mp3"];
+];
 
 var sname=["Ban Ja tu meri Rani",
 "Banduk Meri Laila",
@@ -43,17 +34,7 @@ var sname=["Ban Ja tu meri Rani",
 "mercy",
 "musafir",
 "o sathi",
-"Phir Bhi",
-"Ho Ja Mast Malang Tu",
-"Jee Karda",
-"Abhi Toh Party Shuru Hui Hai",
-"Badtameez Dil",
-"Balam Pichkari",
-"Galliyan Song",
-"Tujhe Kitna Chahne Lage",
-"Aal Izz Well",
-"Rock On",
-"Malang"
+"Phir Bhi"
 ];
 
 var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
@@ -66,16 +47,7 @@ var sd=["Artist: Guru Randhawa<br>Movie: Tumhari Sulu<br>Released: 2017",
 ,"Artist: KK<br>Movie: Shab<br>Released: 2017"
 ,"Artist: Arijit Singh<br>Movie: Shab<br>Released: 2017"
 ,"Artists: Arijit Singh, Shashaa Tirupati<br>Movie: Half Girlfriend<br>Released: 2017<br>Written: 2001 (lyrics)<br>Lyricist(s): Manoj Muntashir<br>Composer(s): Mithoon"
-,"Artists: Hadiya Hashmi, Adnan Dhool <br>Movie: Malang<br>Released: 2020"
-,"Artists: Divya Kumar <br>Movie:Badlapur (Original Motion Picture Soundtrack)<br>Released: 2014"
-,"Artists: Badshah, Aastha Gill <br>Movie: Khoobsurat<br>Released: 2014"
-,"Artists: Pritam, Benny Dayal, Shefali Alvares<br>Movie: Yeh Jawaani Hai Deewani<br>Released: 2013"
-,"Artists: Pritam, Vishal Dadlani, Shalmali Kholgade<br>Movie: Yeh Jawaani Hai Deewani<br>Released: 2013"
-,"Artists: Ankit Tiwari <br>Movie: Ek Villain <br>Released: 2014"
-,"Artists: Arijit Singh <br>Movie: Kabir Singh<br>Released: 2019"
-,"Artists: Sonu Nigam, Swanand Kirkire, Shaan <br>Movie: 3 Idiots <br>Released: 2009"
-,"Artists: Dominique Cerejo, Farhan Akhtar, Raman Mahadevan, Caralisa Monteiro, Suraj Jagan <br>Movie: Rock On<br>Released: 2008"
-,"Artists: Ved Sharma <br>Movie: Malang<br>Released: 2020"];
+];
 
 var bool=[];
 for(var i=0; i<sd.length; i++)
@@ -90,21 +62,11 @@ var icon=["images\\\\1.jpg",
 "images\\\\7.jpg",
 "images\\\\8.jpg",
 "images\\\\9.jpg",
-"images\\\\10.jpg",
-"images\\\\11.png",
-"images\\\\12.png",
-"images\\\\13.png",
-"images\\\\14.png",
-"images\\\\15.png",
-"images\\\\16.png",
-"images\\\\17.png",
-"images\\\\18.png",
-"images\\\\19.png",
-"images\\\\20.png",
+"images\\\\10.jpg"
 ];
 
-var mood=[["1","2","3","11","12"],["4","5","13","14","15"],["6","7","8","16","17"],["9","10","18","19","20"]];
-var mmm=["1.png","1.png","1.png","2.png","2.png","3.png","3.png","3.png","4.png","4.png","1.png","1.png","2.png","2.png","2.png","3.png","3.png","4.png","4.png","4.png"];
+var mood=[["1","2","3"],["4","5"],["6","7","8"],["9","10"]];
+var mmm=["1.png","1.png","1.png","2.png","2.png","3.png","3.png","3.png","4.png","4.png"];
 
 var songs=new Array(icon.length);
 for (var i = 0; i<icon.length; i++) {
