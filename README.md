@@ -24,4 +24,9 @@ A window will open in chrome browser having the interface of the player. Select 
 
 When emotion is detected, you can see the name of the emotion in the terminal open.
 
+#Screenshots
 
+![1](https://user-images.githubusercontent.com/83027180/165817302-73ea1077-c2b4-4e6f-b9db-3946314aa029.png)
+
+
+![3](https://user-images.githubusercontent.com/83027180/165817443-cc538a45-1476-40eb-8dea-355b5461e6da.png)
