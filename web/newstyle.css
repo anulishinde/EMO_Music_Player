@@ -1,0 +1,245 @@
+
+audio {
+  position: absolute;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 14px 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: #9d57e4;
+}
+
+.audio-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.2s;
+  width: 90vw;
+  max-width: 700px;
+  background-color: rgba(1,1,1,0.8);
+  box-sizing: border-box;
+  height: 80px;
+}
+@media screen and (max-width: 560px) {
+  .audio-player {
+    width: 90vw;
+    background: white;
+  }
+}
+
+.info {
+  flex: 1;
+  padding: 16px 30px;
+}
+
+
+.cover-art a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.cover-art a:hover {
+  background: #22a952;
+  opacity: 0.2;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  background: white;
+  margin-top: -1px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+.controls_plays {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+.controls_player {
+  flex: 1;
+  fill: #7FE5A3;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#plays_btn, #prev_btn, #next_btn {
+  cursor: pointer;
+  width: 26px;
+  max-width: 18px;
+  transition: all 0.2s;
+}
+#plays_btn:hover, #prev_btn:hover, #next_btn:hover {
+  fill: #565349;
+}
+
+#pause_btn {
+  display: none;
+}
+
+#volume_btn, #shuffle_btn, #playlist_btn {
+  cursor: pointer;
+  width: 23px;
+  max-width: 18px;
+  transition: all 0.2s;
+}
+#volume_btn:hover, #shuffle_btn:hover, #playlist_btn:hover {
+  fill: #22a952;
+}
+
+.progressbar_slide {
+  width: 100%;
+  background: #7fe5a3;
+  height: 5px;
+}
+
+.progressbar_range {
+  width: 0;
+  background: black;
+  height: 5px;
+}
+
+
+.player {
+	height: 0px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+  }
+  
+  .details {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 25px;
+  }
+  
+  .track-art {
+	margin: 25px;
+	height: 250px;
+	width: 250px;
+	background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	background-size: cover;
+	border-radius: 15%;
+  }
+  
+  .now-playing {
+	font-size: 1rem;
+  }
+  
+  .track-name {
+	font-size: 3rem;
+  }
+  
+  .track-artist {
+	font-size: 1.5rem;
+  }
+  
+  .buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  margin-top: 0px;
+  height: 20px;
+  width: 200px;
+  font-size: 10px;
+  }
+  
+  .playpause-track, .prev-track, .next-track {
+	padding: 15px;
+	opacity: 0.8;
+  
+	/* Smoothly transition the opacity */
+	transition: opacity .2s;
+  }
+  
+  .playpause-track:hover, .prev-track:hover, .next-track:hover {
+	opacity: 1.0;
+  }
+  
+  .slider_container {
+	width: 75%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  color: #f6f8f7;
+  }
+  
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 5px;
+	background: rgb(218, 172, 172);
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+  
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	background: white;
+	cursor: pointer;
+	border-radius: 50%;
+  }
+  
+  .seek_slider:hover, .volume_slider:hover {
+	opacity: 1.0;
+  }
+  
+  .seek_slider {
+	width: 70%;
+  }
+  
+  .volume_slider {
+	width: 7%;
+  }
+  
+  .current-time, .total-duration {
+	padding: 10px;
+  }
+  
+  i.fa-volume-down, i.fa-volume-up {
+	padding: 0px;
+  }
+  
+  i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+	cursor: pointer;
+  }
+
+
+  

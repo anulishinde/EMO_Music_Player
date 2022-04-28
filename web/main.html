@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8"> 
+	<title>musical Arena</title>
+	<script type="text/javascript" src="/eel.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="background.css">
+	<link rel="stylesheet" type="text/css" href="player.css">
+	<link rel="stylesheet" type="text/css" href="newstyle.css">
+	<style>
+	body{
+		margin: 0;
+	}
+	</style>
+</head>
+
+
+
+<body>
+	<br><br><br><br><br>
+	<div id="first">
+		<h1 font-family="verdana" align="center" style= "background-color:rgba(0, 0, 0,.2); font-size: 40px;color: rgb(240, 230, 230);margin: 0;">EMO Music Player<h1>
+		</div>
+	<!--<div id="second" class="second">
+
+		<button onclick="myFunction()">
+	</div>
+	-->
+
+	<script src="mycode.js"></script>
+
+		<div id="queue"><br><p style="font-size: 30px; font-family: 'Ubantu';color: white;">&nbsp;&nbsp;&nbsp;Queue</p><hr></div>
+
+	<div id="third">
+		<div id="emoji"></div>
+		<div id="xyz">
+		&nbsp;&nbsp;&nbsp;Playing :&nbsp;&nbsp;
+		<label id="sname" align="center">None</label></div>
+		<div id="mod">Player Mode : Queue-mode <input type="radio" name="mode" checked="checked" onclick="setmod(this)" value="1"> &nbsp;&nbsp;Emotion-mode <input type="radio" name="mode" onclick="setmod(this)" value="2"> 
+		</div>
+			  <div class="player">
+				<div class="buttons">
+				  <div class="prev-track" id="prevtrack" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+				  <div class="playpause-track" id="playpausetrack" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+				  <div class="next-track" id="nexttrack" onclick="nextsong()"><i class="fa fa-step-forward fa-2x"></i></div>
+				</div>
+				<div class="slider_container">
+				  <div class="current-time" id="currenttime">00:00</div>
+				  <input type="range" min="1" max="100" value="0" class="seek_slider" id="seekslider" onchange="seekTo()">
+				  <div class="total-duration" id="totalduration">00:00</div>
+				  <i class="fa fa-volume-down"></i>
+				  <input type="range" min="1" max="100" value="99" class="volume_slider" id ="volumeslider" onchange="setVolume()">
+				  <i class="fa fa-volume-up"></i>
+				</div>
+			</div>
+			<script>
+				document.getElementById("seekslider").onended=function(){
+					if(mod==1)
+						next_in_Q();
+					else if(mod==2){
+						getTime();
+					}
+
+				};
+
+
+			</script>
+		
+	</div>
+	
+	</body>
+</html>
