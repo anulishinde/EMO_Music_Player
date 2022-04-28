@@ -192,61 +192,6 @@ function addq(elem)
 }
 
 
-function resetValues() {
-  curr_time.innerHTML = "00:00";
-  total_duration.innerHTML = "00:00";
-  document.getElementById("seekslider").value = 0;
-}
-function seekTo() {
-  let seekto = curr_track.duration * (document.getElementById("seekslider").value / 100);
-  curr_track.currentTime = seekto;
-}
-
-function setVolume() {
-  curr_track.volume = document.getElementById("volumeslider").value / 100;
-}
-
-function seekUpdate() {
-  let seekPosition = 0;
-
-  if (!isNaN(curr_track.duration)) {
-    seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-
-    document.getElementById("seekslider").value = seekPosition;
-
-    let currentMinutes = Math.floor(curr_track.currentTime / 60);
-    let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-    let durationMinutes = Math.floor(curr_track.duration / 60);
-    let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
-    if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
-    if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-    if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
-    if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-    document.getElementById("currenttime").innerHTML = currentMinutes + ":" + currentSeconds;
-    document.getElementById("totalduration").innerHTML = durationMinutes + ":" + durationSeconds;
-  }
-}
-
-
-function playpauseTrack() {
-  if (!isPlaying) playTrack();
-  else pauseTrack();
-}
-
-function playTrack() {
-  curr_track.play();
-  isPlaying = true;
-  document.getElementById("playpausetrack").innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
-}
-
-function pauseTrack() {
-  curr_track.pause();
-  isPlaying = false;
-  document.getElementById("playpausetrack").innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';;
-}
-
 function nextsong(){
   sqc=sqc+1;
 	// if(sqc==eqc){
